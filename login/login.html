@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>LOGIN </title>
+
+        <style type="text/css">
+            *{
+                margin:0;
+                padding:0;
+            }   
+            a{
+                text-decoration: none;
+            }
+            .main_bar{
+                width:100%;
+                height: 350px;
+                margin-top:200px;
+            }
+            .login_form{
+                width:30%;
+                height:80%;
+                margin:0 auto;
+                /*border:2px solid #16A085;*/
+                border-radius: 15px;
+                padding:10px;
+                background: #ECF0F1;
+            }
+            .name,.pwd,.sbm_btn{
+                display:block;
+                width:70%;
+                margin:0 auto;
+                height:35px;
+                font-size:16px;
+                border-color:transparent;
+                border-radius: 5px;
+                border:0;
+                padding-left:8px;
+                
+            }
+            .yzm{
+                height: 35px;
+                margin:0 auto;
+                width: 72%;
+                line-height: 35px;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            .code{
+                width:50%;
+                height: 35px;
+                border:0;
+                border-color: transparent;
+                font-size:16px;
+                border-radius: 5px;
+                padding-left: 8px;
+            }
+            .code_pic{
+                display: block;
+                width:40%;
+                height:35px;
+                background-color: #0381ff;
+                color:#FFF;
+                position: absolute;
+                top: 0px;
+                left:60%;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .name{
+                margin-top:20px;
+            }
+            .sbm_btn{
+                text-align: center;
+                background-color: #1abc9c;
+                color:#fff;
+                line-height: 35px;
+            }
+            .re_pwd {
+                width: 25%;
+                margin: 10px auto 10px;
+            }
+            .re_pwd a{
+                text-decoration: none;
+                font-size:14px;
+                color: #ccc;
+            }
+            .re_pwd a:hover{
+                cursor: pointer;
+                color:#16A085;
+            }
+            .errorTips{
+                width:70%;
+                color:red;
+                font-size: 14px;
+                margin:0 auto;
+                height: 20px;
+                line-height:20px;
+            }
+        </style>
+    </head>
+
+  	<body background="img1.jpg"> 
+        <div class="main_bar">
+            <div id="login_form" class="login_form">
+                <div class="title"></div>
+                <form action="login.html">
+                    <div id="form_widgt">
+                        <input type="text" name="name" class="name" placeholder="ユーザーID" id="username"><br>
+						<br></br>
+                        <input type="password" name="pwd" class="pwd"  placeholder="パスワード" id="password"><br>   
+						<br></br>
+						<br></br>
+
+						<input type="button"  name="sbm" class="sbm_btn" id="btn"  value="登録" onclick="firm()">
+						                    
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+		   var btn = document.getElementById("btn");
+        btn.onclick = function firm() {
+             if(document.getElementById("username").value=="") {
+                 alert("ユーザーIDを入力してください");
+                 return false;
+             } else if(document.getElementById("password").value=="") {
+                 alert("パスワードを入力してください");
+                 return false;
+             } 
+			 if(document.getElementById("username").value!="123456") {
+                 alert("入力のユーザID、またはパスワードに誤りがあります。入力内容が正しいかどうか、もう一度ご確認ください。");
+                 return false;
+             } else if(document.getElementById("password").value!="123456") {
+                 alert("入力のユーザID、またはパスワードに誤りがあります。入力内容が正しいかどうか、もう一度ご確認ください。");
+                 return false;
+             } else {
+				alert("登録完了です。ホームページを遷移します");
+                location.href = "index.html";
+         
+             }
+         }
+        </script>
+    </body>
+</html>
