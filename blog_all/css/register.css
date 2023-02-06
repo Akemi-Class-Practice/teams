@@ -1,0 +1,92 @@
+body{
+    font-family: 'Kiwi Maru', serif;
+}
+header {
+    background-color: #ffe4e1;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav div a {
+    color: #7c7171;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav div a:hover{
+    color:#f37a6c;
+}
+
+section {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.register-wrap {
+    width:500px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #D6EEE1;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+table {
+    width:500px;
+    margin: 1rem auto;
+   padding: 1rem 0;;
+   
+}
+
+ td input {
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px 0px gray inset;
+    vertical-align: baseline;
+    margin: 10px 15px;
+    padding-left: 1rem;
+    border-radius: 30px;
+}
+
+th{
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn button{
+    width:200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f59923;
+    color: #363535
+}
+
+
+.btn button:hover{
+   opacity:0.8;
+   color: #fff;
+}
+
+footer{
+    text-align: center;
+    background-color: #8f8E8E;
+    color: #fff;
+    padding:1.6rem 0;
+}
